@@ -1,0 +1,13 @@
+.container {
+    /* width: 95%; */
+    /* max-width: 1000px; */
+    /* border: 2px solid red; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    padding: 0px 32px;
+    min-height: 90vh;
+    margin: 0px auto;
+    padding-top: 100px;
+    padding-bottom: 32px;
+    height: min-content;
+}
