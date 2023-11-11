@@ -1,5 +1,7 @@
 import styles from "./optionsFilter.module.css"
 import { useState } from "react"
+import { filterComputer } from "@/data/filterOptions"
+import { IFiltersList } from "@/types/products"
 
 interface IFilterComputer {
     title: string
@@ -30,14 +32,67 @@ export const OptionsFilter = ({ title, options }: IFilterComputer) => {
                         )
                     })
                 }
-                {/* <li><p>I7-9700E</p></li>
-                <li><p>I7-9700F</p></li>
-                <li><p>I7-9700KF</p></li>
-                <li><p>I3-12100F</p></li>
-                <li><p>I3-12100SF</p></li>
-                <li><p>Ryzen 9 7900X</p></li>
-                <li><p>Ryzen 7 7700X</p></li> */}
             </ul>
+        </section>
+    )
+}
+
+export const DefalutFilter = ({ listFilter }: any) => {
+
+    // console.log(listFilter)
+
+    const [filterStatus, setFilterStatus] = useState<string>("filterOpen")
+
+    const setStatusFilterFunction = () => {
+        if (filterStatus == "filterClose") {
+            setFilterStatus("filter")
+            console.log("ok")
+        } else {
+            setFilterStatus("filterClose")
+        }
+    }
+
+    return (
+        <section className={`${filterStatus == "filterClose" ? (styles.filterClose) : ("")} ${styles.filterContainer}`}>
+            <section className={styles.filterSection}>
+                <h4>Filter</h4>
+                <button onClick={() => setStatusFilterFunction()} type="button">X</button>
+                <ul>
+                    <li>
+                        <p>Processador Intel</p>
+                        <span>X</span>
+                    </li>
+                    <li>
+                        <p>SSD 250GB</p>
+                        <span>X</span>
+                    </li>
+                    <li>
+                        <p>Ram 16GB</p>
+                        <span>X</span>
+                    </li>
+                </ul>
+            </section>
+            <section className={styles.priceContainer}>
+                <h4>Preço</h4>
+                <div className={styles.minAndMaxPrice}>
+                    <div className={styles.inputContainer}>
+                        <label htmlFor="priceMin">R$</label>
+                        <input id="priceMin" type="number" />
+                    </div>
+                    <span></span>
+                    <div className={styles.inputContainer}>
+                        <label htmlFor="priceMin">R$</label>
+                        <input id="priceMin" type="number" />
+                    </div>
+                </div>
+            </section>
+            {
+                listFilter.map((filter: IFilterComputer, index: number) => {
+                    return (
+                        <OptionsFilter key={index} title={filter.title} options={filter.options} />
+                    )
+                })
+            }
         </section>
     )
 }

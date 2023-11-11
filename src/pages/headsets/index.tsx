@@ -1,6 +1,6 @@
 import styles from "../../styles/computers.module.css"
 import { useState, useEffect } from "react"
-import { filterComputer } from "@/data/filterOptions"
+import { filterHeadset } from "@/data/filterOptions"
 import { ProductList } from "@/components/productList"
 import { AllProductsList } from "@/data/products"
 import { ICard } from "@/types/products"
@@ -17,7 +17,7 @@ const Computers = () => {
 
     useEffect(() => {
         AllProductsList.filter((products: IAllProductList) => {
-            if (products.type == "computers") {
+            if (products.type == "headsets") {
                 setListSelect(products.list)
             }
         })
@@ -25,7 +25,7 @@ const Computers = () => {
 
     return (
         <main className={styles.mainContainer}>
-            <DefalutFilter listFilter={filterComputer} />
+            <DefalutFilter listFilter={filterHeadset} />
             <section className={styles.listContainer}>
                 <ProductList listSelect={listSelect} />
             </section>

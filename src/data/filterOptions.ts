@@ -1,9 +1,6 @@
-interface IFilterComputer {
-    title: string
-    options: string[]
-}
+import { IFiltersList } from "@/types/products"
 
-export const filterComputer: IFilterComputer[] = [
+export const filterComputer: IFiltersList[] = [
     {
         title: "Procesasfores",
         options: [
@@ -37,6 +34,33 @@ export const filterComputer: IFilterComputer[] = [
             "SSD 480GB",
             "HD 1TB",
             "HD 2TB",
+        ]
+    }
+
+]
+
+export const filterHeadset: IFiltersList[] = [
+    {
+        title: "Cor",
+        options: [
+            "Preto",
+            "Branco",
+            "Azul",
+            "Vermelho"
+        ]
+    },
+    {
+        title: "RGB",
+        options: [
+            "Sim",
+            "Não"
+        ]
+    },
+    {
+        title: "Cabo",
+        options: [
+            "Sim",
+            "Não"
         ]
     }
 

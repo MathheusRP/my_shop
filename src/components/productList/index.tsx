@@ -1,7 +1,13 @@
 import styles from "./product.module.css"
 import { ProductCard } from "../card"
+import { ComputersList } from "@/data/products"
+import { ICard } from "@/types/products"
 
-export const ProductList = () => {
+import { useEffect } from "react"
+
+export const ProductList = ({ listSelect }: any) => {
+
+    // console.log(ComputersList)
 
     return (
         <section className={styles.productListContainer}>
@@ -17,12 +23,14 @@ export const ProductList = () => {
                 </div>
             </div>
             <ul className={styles.list}>
+                {
+                    listSelect.map((product: ICard, index: number) => {
+                        return (
+                            <ProductCard key={index} {...product} />
+                        )
+                    })
+                }
 
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
-                <ProductCard />
 
             </ul>
         </section>

@@ -1,17 +1,19 @@
 import styles from "./productCard.module.css"
+import { ICard } from "@/types/products"
 
-export const ProductCard = () => {
+export const ProductCard = (product: ICard) => {
 
     return (
         <li className={styles.cardContainer}>
-            <img src="/image/gabinete2.png" alt="Computador" width="auto" height="auto" />
+            <img src={product.image} alt={product.title} width="auto" height="auto" />
+            {/* <img src="/image/gabinete2.png" alt="Computador" width="auto" height="auto" /> */}
             <div className={styles.productInfo}>
-                <p className={styles.description}>Computador Gamer, Intel i5-10400F, GeForce RTX 2060 Super 8GB, 16GB DDR4, SSD M.2 480GB</p>
+                <p className={styles.description}>{product.title}</p>
                 <div className={styles.priceContainer}>
-                    <p className={styles.oldPrice}>R$ 4.000,00</p>
+                    <p className={styles.oldPrice}>{product.price}</p>
                     <span className={styles.price}>
-                        <p>10% OFF</p>
-                        <p>R$ 3.000,00</p>
+                        <p>{product.discount}% OFF</p>
+                        <p>R$ {product.price - (product.price * product.discount / 100)}</p>
                     </span>
 
                 </div>
