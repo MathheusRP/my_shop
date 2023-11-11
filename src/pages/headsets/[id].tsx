@@ -16,7 +16,7 @@ const Computer = () => {
             <section className={styles.product}>
                 <section >
                     <div className={styles.imagensContainer}>
-                    <Image src={"/image/gabinete.png"} width={200} height={200} alt="Computador Gamer"/>
+                    <Image src={"/image/JBL.webp"} width={200} height={200} alt="Computador Gamer"/>
                     <div className={styles.circles}>
                         <span></span>
                         <span></span>
@@ -31,30 +31,27 @@ const Computer = () => {
                     </div>
                 </section>
                 <section className={styles.productInfo}>
-                    <h3>Computador Gamer, Intel i5-10400F, GeForce RTX 3060 Super 8GB, 16GB DDR4, SSD M.2 480GB</h3>
+                    <h3>HEADSET GAMER JBL QUANTUM 400 - PARA CONSOLE E PC</h3>
                     <span className={styles.status}>Produto Disponivel</span>
                     <div className={styles.productDescription}>
                     <h4>Descrição</h4>
-                    <p><b>Processador</b> Intel I5-10400F</p>
-                    <p><b>Placa de Vídeo</b> GeForce RTX 3060 8GB</p>
-                    <p><b>Memoria Ram</b> 16GB DDR4</p>
-                    <p><b>Placa Mãe</b> PLACA MÃE A520M</p>
-                    <p><b>Armazenamento</b> SSD 480GB</p>
-                    <p><b>Fonte</b> 650W</p>
-                    <p><b>Coler</b> Aircooler</p>
-                    <p><b>Gabinete</b> Gabinete preto com tampa de vidro</p>
+                    <p>- Resposta de frequência: 20 Hz a 20 kHz</p>
+                    <p>- Resposta de frequência do microfone: 100 Hz a 10 kHz</p>
+                    <p>- Potência máx. de entrada: 30 mW</p>
+                    <p>- Sensibilidade: 98 dB SPL @1 kHz / 1 mW</p>
+                    <p>- Sensibilidade do microfone: -40 dBV @ 1 kHz / Pa</p>
+                    <p>- Impedância: 32 Ohm</p>
+                    <p>- Padrão de captação do microfone: Direcional</p>
                     </div>
                     <div className={styles.priceContainer}>
                         <span>
-                            <p className={styles.oldPrice}>R$ 4.000,00</p>
-                            <p className={styles.price}>R$ 3.200,00</p>
+                            <p className={styles.oldPrice}>R$ 400,00</p>
+                            <p className={styles.price}>R$ 320,00</p>
                         </span>
                         <button>COMPRAR</button>
                     </div>
                 </section>
             </section>
-                <GamePerformance/>
-                <AboutTheProduct/>
                 <Comments/>
         </main>
     )
