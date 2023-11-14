@@ -1,12 +1,12 @@
 import styles from "./productCard.module.css"
 import { ICard } from "@/types/products"
+import Image from "next/image"
 
 export const ProductCard = (product: ICard) => {
 
     return (
         <li className={styles.cardContainer}>
-            <img src={product.image} alt={product.title} width="auto" height="auto" />
-            {/* <img src="/image/gabinete2.png" alt="Computador" width="auto" height="auto" /> */}
+            <Image src={product.image} alt={product.title} width={100} height={100} />
             <div className={styles.productInfo}>
                 <p className={styles.description}>{product.title}</p>
                 <div className={styles.priceContainer}>
