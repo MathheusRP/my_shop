@@ -48,7 +48,7 @@ export const sectionsList: ISection[] = [
     {
         title: <h2>ENCONTRE OS MELHORES PERIFÉRICOS AQUI</h2>,
         bannerImage: "/image/JBL.webp",
-        link: "/perifericos",
+        link: "/headsets",
         productType: "Periféricos",
         featuredProduct: [
             {

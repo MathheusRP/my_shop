@@ -20,13 +20,18 @@ h3,
 h4,
 p,
 a,
-span {
+span,
+label {
   font-family: 'Kanit', sans-serif;
 }
 
 li,
 ul {
   list-style: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 :root {
