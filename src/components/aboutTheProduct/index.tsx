@@ -11,7 +11,7 @@ export const AboutTheProduct = () => {
             <ul className={styles.componentsList}>
                 <li>
                     <div className={styles.image}>
-                        <Image src="https://img.terabyteshop.com.br/archive/4157291290/processador-intel-core-i5-10gen-01.png" alt="Processador I5" width={100} height={100}/>
+                        <Image src="/productsImages/cpuI5.png" alt="Processador I5" width={300} height={300}/>
                     </div>
                     <div className={styles.info}>
                         <h4>PROCESSADOR INTEL i5 10400F </h4>
@@ -23,7 +23,7 @@ export const AboutTheProduct = () => {
                 </li>
                 <li>
                     <div className={styles.image}>
-                        <Image src="https://cdn.pichau.com.br/wysiwyg/Computadores_desc/GPU/Nvidia/rtx_3070.png" alt="RTX 3070" width={100} height={100}/>
+                        <Image src="/productsImages/rtx_3070.png" alt="RTX 3070" width={300} height={300}/>
                     </div>
                     <div className={styles.info}>
                         <h4>PLACA DE VÍDEO RTX 3060 8GB </h4>
@@ -36,7 +36,7 @@ export const AboutTheProduct = () => {
                 </li>
                 <li>
                     <div className={styles.image}>
-                        <Image src="https://dlcdnwebimgs.asus.com/gain/5AB54928-6206-49D6-BB49-A106272AC630/w717/h525" alt="RTX 3070" width={100} height={100}/>
+                        <Image src="/productsImages/h525.png" alt="490 PLACA MÃE GAMING INTEL® Z490" width={300} height={300}/>
                     </div>
                     <div className={styles.info}>
                         <h4>Z490 PLACA MÃE GAMING INTEL® Z490</h4>
@@ -48,7 +48,7 @@ export const AboutTheProduct = () => {
                 </li>
                 <li>
                     <div className={styles.image}>
-                        <Image src="https://images.tcdn.com.br/img/img_prod/687149/fonte_atx_600w_potencia_real_t_dagger_101581_1_ca65c4942ead008648ddc13c5575c5bc.png" alt="RTX 3070" width={100} height={100}/>
+                        <Image src="/productsImages/fonte600W.png" alt="FONTE ATX 600W T-DAGGER" width={300} height={300}/>
                     </div>
                     <div className={styles.info}>
                         <h4>FONTE ATX 600W T-DAGGER</h4>
