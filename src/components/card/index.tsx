@@ -6,7 +6,7 @@ export const ProductCard = (product: ICard) => {
 
     return (
         <li className={styles.cardContainer}>
-            <Image src={product.image} alt={product.title} width={100} height={100} />
+            <Image src={product.image} alt={product.title} width={300} height={300} />
             <div className={styles.productInfo}>
                 <p className={styles.description}>{product.title}</p>
                 <div className={styles.priceContainer}>
